@@ -71,6 +71,8 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 - directives: v-if/v-else-if/v-else/v-for/v-bind
 - lifecycle hooks/methods
 
+So even though it can be tempting to pass functions as props in Vue, it's considered an anti-pattern. (Michael Thiessen)
+
 ```js
 // todo item component definition
   <script setup>
