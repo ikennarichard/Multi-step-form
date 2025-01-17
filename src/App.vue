@@ -1,11 +1,21 @@
 <script setup lang="ts">
-import StepCircle from './components/StepCircle.vue'
+import FormButton from './components/FormButton.vue';
+import PersonalInfo from './components/PersonalInfo.vue';
+
+const handleSubmit = () => {
+  const formData = new FormData()
+  console.log(formData)
+}
 
 </script>
 
 <template>
     <div class="wrapper">
-      <StepCircle msg="You did it!" />
+
+      <form @submit.prevent="handleSubmit">
+        <PersonalInfo />
+        <FormButton label="Next Step" type="submit" />
+      </form>
     </div>
 </template>
 
